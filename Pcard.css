@@ -1,0 +1,81 @@
+.Pcards{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+       width: 100%;
+       height: 100%;
+      padding: 2em 5em;
+      transition: 0.3s;
+   }
+   .Pcards >img{
+      width: 100%;
+      height: 100%;
+   }
+   .Pcards>h1{
+       display: flex;
+       text-align: left !important;
+       font-size: 40px;
+       font-family: 'Noto Sans Telugu';
+       font-weight: bold;
+       transition: 0.3s;
+       letter-spacing: 1px;
+   
+   }
+
+   .Pcards >h3{
+       text-align: left;
+       font-size: 20px;
+       margin: 0;
+       letter-spacing: 1px;
+   }
+   .date{
+       text-align: left;
+       color: #707070;
+       font-size: 14px;
+       border-left: 4px solid rgb(17, 19, 34);
+   }
+   .descr{
+       line-height: 2em;
+       text-align:justify;
+       display: flex;
+       width: 100%;
+       letter-spacing: 1px;
+   }
+   .Pcards>a{
+       display: flex;
+       align-self: left;
+       justify-self: left;
+       padding: 10px 20px;
+       text-decoration: none;
+       background-color: black;
+       width: max-content;
+       color: white;
+       font-size: 18px;
+       margin-bottom: 10px;
+       border-radius: 5px;
+       transition: 0.4s !important;
+   }
+   .Pcards >a:active{
+       scale: 0.8;
+   }
+   .Pcards >a:hover{
+    cursor: pointer;
+       color: rgb(100, 156, 208);
+       transition: color 0.3s;
+       background-color: rgb(54, 50, 50);
+   }
+   @media screen and (width<580px) {
+    .Pcards >h1{
+        font-size: 28px;
+    }
+   }
+   @media screen and (width<540px) {
+    .Pcards >h1{
+        font-size: 25px;
+    }
+    .Pcards{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+   }

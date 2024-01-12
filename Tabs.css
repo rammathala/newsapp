@@ -1,0 +1,38 @@
+.Tabs{
+    
+    border-top: 2px solid rgb(228, 225, 225);
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    justify-content: center;
+    row-gap: 20px;
+    transition: 0.3s;
+    
+}
+.Tabs > a{
+    margin: 0 20px;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    padding: 7px 10px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Noto Sans Telugu' !important;
+}
+.Tabs > a:hover{
+    background-color: rgb(11, 11, 11);
+    color: white;
+    cursor: pointer;  
+}
+.Tabs >a.active{
+    background-color: rgb(71, 73, 75);
+    color: white;
+    height: max-content;
+    padding: 7px 10px;
+    transition: 0.4s;  
+    border-radius: 5px;
+}
